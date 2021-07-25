@@ -13,6 +13,7 @@ The "localhost" is assuming that your are hosting this API on your own machine.
 `POST http://localhost:3000/api/v1/articles`
 
 **Body**
+
 `{
   "title": "The article title", 
   "body": "The article body"
