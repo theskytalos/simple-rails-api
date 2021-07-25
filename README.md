@@ -7,7 +7,7 @@ Just a (very) simple articles RESTful API made only for learning purposes.
 This app uses SQLite, therefore, make sure you have it installed in your envronment.
 The "localhost" is assuming that your are hosting this API on your own machine.
 
-### Add an user
+### Add an article
 **Request**
 
 `POST http://localhost:3000/api/v1/articles`
@@ -18,7 +18,7 @@ The "localhost" is assuming that your are hosting this API on your own machine.
   "body": "The article body"
 }`
 
-### Edit an user
+### Edit an article
 **Request**
 
 `PUT http://localhost:3000/api/v1/articles/:id`
@@ -30,17 +30,17 @@ The "localhost" is assuming that your are hosting this API on your own machine.
   "body": "The article body"
 }`
 
-### Delete an user
+### Delete an article
 **Request**
 
 `DELETE http://localhost:3000/api/v1/articles/:id`
 
-### Show all users
+### Show all articles
 **Request**
 
 `GET http://localhost:3000/api/v1/articles`
 
-### Show specific user
+### Show specific article
 **Request**
 
 `GET http://localhost:3000/api/v1/articles/:id`
