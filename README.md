@@ -1,24 +1,38 @@
-# README
+# Simple Rails API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just a (very) simple articles RESTful API made only for learning purposes.
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+This app uses SQLite, therefore, make sure you have it installed in your envronment.
+The "localhost" is assuming that your are hosting this API on your own machine.
 
-* System dependencies
+### Add a user
+**Request**
+`**POST** http://localhost:3000/api/v1/articles`
+**Body**
+`{
+  "title": "The article title",
+  "body": "The article body"
+}`
 
-* Configuration
+### Edit a user
+**Request**
+`**PUT** http://localhost:3000/api/v1/articles/:id`
+**Body**
+`{
+  "title": "The article title",
+  "body": "The article body"
+}`
 
-* Database creation
+### Delete a user
+**Request**
+`**DELETE** http://localhost:3000/api/v1/articles/:id`
 
-* Database initialization
+### Show all users
+**Request**
+`**GET** http://localhost:3000/api/v1/articles`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Show specific user
+**Request**
+`**GET** http://localhost:3000/api/v1/articles/:id`
